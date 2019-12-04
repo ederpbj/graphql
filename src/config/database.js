@@ -4,6 +4,7 @@ const knexfile = require('../knexfile')
 const knex = require('knex')(knexfile)
 module.exports = knex
 
+//Insere usuário
 /* knex('users').insert({
     name: 'Teste',
     email: 'teste@email.com.br',
@@ -14,4 +15,4 @@ module.exports = knex
 //knex('users').select('*').then(resultado => console.log(resultado))
 //knex('users').first().then(resultado => console.log(resultado))
 //knex('users').then(resultado => console.log(resultado))
-knex('users').where({id: 1}).then(resultado => console.log(resultado))
+//knex('users').where({id: 1}).then(resultado => console.log(resultado))
