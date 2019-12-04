@@ -1,11 +1,12 @@
 // Update with your config settings.
+const {password} = require('./.env')
 
 module.exports = {
     client: 'mysql',
     connection: {
       database: 'graphql',
-      user: 'root',
-      password: '098098my',
+      user: 'admin',
+      password,
     },
     pool: {
       min: 2,
@@ -14,5 +15,5 @@ module.exports = {
     migration: {
       tableName: 'knex_migrations'
     }
-  
+    
 };
